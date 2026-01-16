@@ -1,0 +1,18 @@
+---
+detectors:
+  InstanceVariableAssumption:
+    exclude:
+      - Sh::Cmd
+  IrresponsibleModule:
+    exclude:
+      - AppErr
+  NestedIterators:
+    exclude:
+      - Sh#self.method_missing
+  UncommunicativeVariableName:
+    exclude: '*'
+  UtilityFunction:
+    exclude:
+      - Sh::Cmd#composite_path?
+      - Sh::Cmd#escape
+      - Sh::Cmd#in_path?
